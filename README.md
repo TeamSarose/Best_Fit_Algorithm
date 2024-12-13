@@ -30,4 +30,5 @@ This project demonstrates the **Best Fit Memory Allocation** algorithm, a memory
 ### 1. Clone the Repository
 ```bash
 https://github.com/TeamSarose/Best_Fit_Algorithm.git
-cd BestFitMemoryAllocation
+```
+
