@@ -73,11 +73,14 @@ connection = DriverManager.getConnection(
 - **Output**
 1. The console displays allocation results, showing which process is allocated to which memory block or marked as unallocated.
 2. Allocation logs are stored in the MemoryAllocationLog table in the database.
+   
+---
 
 ### Author
 This project was developed as part of an academic assignment. For any queries, please contact:
 
 **Name: Sarose**
+
 **Email: rafathsarosemrr@gmail.com**
 
 
