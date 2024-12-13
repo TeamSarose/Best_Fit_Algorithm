@@ -60,6 +60,9 @@ connection = DriverManager.getConnection(
 ---
 
 ### 4. Build and Run the Program
+- Open the project in your preferred IDE (e.g., IntelliJ IDEA).
+- Build the project to ensure all dependencies are installed.
+- Run the BestFitWithDatabase class to execute the program.
 
 
 
