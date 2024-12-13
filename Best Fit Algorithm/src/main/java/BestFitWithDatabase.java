@@ -10,6 +10,17 @@ public class BestFitWithDatabase {
         // Priority Queue for memory blocks (sorted by size)
         PriorityQueue<MemoryBlock> memoryBlocks = new PriorityQueue<>(Comparator.comparingInt(MemoryBlock::getSize));
 
+        // Clear database table before execution
+        Connection connection = DatabaseConnection.getConnection();
+        try {
+            PreparedStatement clearTable = connection.prepareStatement("TRUNCATE TABLE MemoryAllocationLog");
+            clearTable.executeUpdate();
+            System.out.println("Database table cleared successfully.");
+        } catch (SQLException e) {
+            System.out.println("Failed to clear database table.");
+            e.printStackTrace();
+        }
+
         // Input memory blocks
         System.out.print("Enter the number of memory blocks: ");
         int m = scanner.nextInt();
@@ -28,7 +39,6 @@ public class BestFitWithDatabase {
         }
 
         // Allocate memory
-        Connection connection = DatabaseConnection.getConnection();
         for (Process process : processes) {
             MemoryBlock bestBlock = null;
             for (MemoryBlock block : memoryBlocks) {
@@ -78,4 +88,3 @@ public class BestFitWithDatabase {
         scanner.close();
     }
 }
-
