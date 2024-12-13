@@ -47,4 +47,19 @@ CREATE TABLE MemoryAllocationLog (
 );
 ```
 
+---
+
+### 3. Configure the Project
+- Update the **DatabaseConnection** class with your MySQL username and password:
+```bash
+connection = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/memory_allocation", "root", "your_password"
+);
+```
+
+---
+
+### 4. Build and Run the Program
+
+
 
