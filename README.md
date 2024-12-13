@@ -32,3 +32,19 @@ This project demonstrates the **Best Fit Memory Allocation** algorithm, a memory
 https://github.com/TeamSarose/Best_Fit_Algorithm.git
 ```
 
+---
+
+### 2. Set Up the MySQL Database
+- Create a database named **memory_allocation**.
+- Run the following SQL script to create the required table
+```bash
+CREATE TABLE MemoryAllocationLog (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    process_id INT NOT NULL,
+    process_size INT NOT NULL,
+    block_id INT DEFAULT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+
