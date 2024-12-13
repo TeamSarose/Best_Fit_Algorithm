@@ -67,10 +67,10 @@ connection = DriverManager.getConnection(
 ---
 
 ### 4. Usage
-- #Input
+- ##Input
 1. Enter the number of memory blocks and their sizes.
 2. Enter the number of processes and their sizes.
-- #Output
+- ##Output
 1. The console displays allocation results, showing which process is allocated to which memory block or marked as unallocated.
 2. Allocation logs are stored in the MemoryAllocationLog table in the database.
 
