@@ -64,5 +64,14 @@ connection = DriverManager.getConnection(
 2. Build the project to ensure all dependencies are installed.
 3. Run the BestFitWithDatabase class to execute the program.
 
+---
+
+### 4. Usage
+- Input
+1. Enter the number of memory blocks and their sizes.
+2. Enter the number of processes and their sizes.
+- Output
+1. The console displays allocation results, showing which process is allocated to which memory block or marked as unallocated.
+2. Allocation logs are stored in the MemoryAllocationLog table in the database.
 
 
